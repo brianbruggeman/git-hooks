@@ -1,0 +1,17 @@
+# -----------------------------------------------------------------------------
+# After much research...
+#  text should be auto, it's the only sane cross-platform option
+#
+#  See:  http://stackoverflow.com/a/10855862
+#  See also: http://adaptivepatchwork.com/2012/03/01/mind-the-end-of-your-line/
+#
+#  To squelch extraneous messages on windows, run:
+#     git --config core.autocrlf=true
+#
+#  To stay consistent on OS X and Linux, run:
+#     git --config core.autocrlf=input
+# -----------------------------------------------------------------------------
+* text eol=auto
+
+# Language aware diffs and force line endings if git did not know they are text:
+*.py    text diff=python
